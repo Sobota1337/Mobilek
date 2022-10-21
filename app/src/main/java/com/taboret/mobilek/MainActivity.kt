@@ -16,5 +16,13 @@ class MainActivity : AppCompatActivity() {
         val przywroc = findViewById<Button>(R.id.przywroc)
         val teskt = findViewById<TextView>(R.id.text)
         val wpisz = findViewById<EditText>(R.id.wpisz)
+
+
+        dopisz.setOnClickListener {
+            teskt.text = teskt.text.toString() + wpisz.text
+        }
+        przywroc.setOnClickListener {
+            teskt.text = "Jan Sobociński"
+        }
     }
 }
